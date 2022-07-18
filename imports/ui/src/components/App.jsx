@@ -12,14 +12,13 @@ const BodyFontSizeOverride = createGlobalStyle`
 `;
 const dataService = Data();
 
-const App = () => (
+const App = () => ( true ? <div>foo</div> :
   <Context.Provider value={dataService}>
     <ThemeProvider>
       <GlobalStyle/>
       <BodyFontSizeOverride/>
 
       <Desktop/>
-      <Taskbar/>
     </ThemeProvider>
   </Context.Provider>
 );
